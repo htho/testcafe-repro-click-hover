@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px dashed black;
+            position: absolute;
+        }
+        .hovered {
+            border-style: solid;
+        }
+        #bg {
+            width: 200px;
+            height: 200px;
+        }
+        #bg:hover {
+            background: rgba(255, 0, 0, 50);
+        }
+        #fg:hover {
+            background: rgba(0, 255, 0, 50);
+        }
+        #fg, #ol {
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            height: 100px;
+        }
+        #ol {
+            background-color: gray;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="bg" onmouseenter="enter(this)" onmouseleave="leave(this)"></div>
+    <div id="fg" onmouseenter="enter(this)" onmouseleave="leave(this)"></div>
+    <div id="ol" onclick="clck(this)"></div>
+</body>
+</html>

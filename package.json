@@ -1,0 +1,17 @@
+{
+  "name": "repro-testcafe-click-hover",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-dna": "testcafe chrome test.tc.ts --disable-native-automation",
+    "test-na": "testcafe chrome test.tc.ts",
+    "serve": "serve public"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "serve": "^14.0.1",
+    "testcafe": "^3.0.1"
+  }
+}
